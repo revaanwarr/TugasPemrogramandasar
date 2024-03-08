@@ -1,0 +1,79 @@
+Nama: Reva Anwar
+NRP: 2C2230003
+
+NOMOR 1
+PSEUDOCODE MENGHITUNG_JUMLAH_DIGIT
+
+ Begin 
+// Deklarasi variabel
+Int bilangan, jumlah = 0; 
+
+// Input 
+cout << "input jumlah bilangan: ";
+cin >> bilangan;
+
+// Lakukan perulangan sampai bilangan lebih besar dari 0, kurangi bilangan dengan 10 
+While bilangan > 0 do
+    jumlah_digit = jumlah_digit + 1
+    bilangan = bilangan / 10
+
+// Output 
+cout << "Jumlah digit dari bilangan 123 adalah" << jumlah_digit
+jumlah_digit = 0
+bilangan = 123
+
+NOMOR 2
+PSEUDOCODE MENENTUKAN_TAHUN_KABISAT
+
+Begin 
+// Deklarasi variabel
+Int tahun;
+
+// Input
+Printf ("Program C Untuk Cek Tahun Kabisat") ; 
+
+  Printf ("Masukan suatu tahun : ") ;
+  Scanf ("%", &tahun) ;
+
+// Cek tahun kabisat 
+if (tahun % 400 == 0) {
+  printf << tahun << " Merupakan Tahun Kabisat" ;
+  } 
+ else if (tahun % 100 == 0) {
+   printf << tahun << " Bukan Tahun Kabisat" ;
+  } 
+ else if (tahun % 4 == 0) {
+   printf << tahun << " Merupakan Tahun Kabisat" ;
+  } 
+  else {
+    printf << tahun << " Bukan Tahun kabisat" ;
+  }
+End
+
+NOMOR 3
+PSEUDOCODE TURUNAN
+
+Mulai
+
+Cetak "Masukkan rumus kecepatan:"
+ Input rumus_kecepatan
+
+turunan <- hitungTurunan(rumus_kecepatan)
+Cetak "Turunan dari rumus kecepatan adalah:", turunan ;
+
+
+Fungsi hitungTurunan(rumus_kecepatan) turunan <- ""
+turunan <- rumus_kecepatan
+Jika rumus_kecepatan adalah v = s/t maka
+turunan <- "1/t"
+Jika rumus_kecepatan adalah v = s/t + at maka
+turunan <- "1/t + a"
+Jika rumus_kecepatan adalah v = u + at maka
+turunan <- "a"
+Jika rumus_kecepatan adalah v = u + at + 0.5*a*t^2 maka
+turunan <- "a + 0.5*a*t" 
+Kembalikan nilai turunan
+
+Akhir Fungsi
+
+
