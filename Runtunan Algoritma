@@ -1,0 +1,103 @@
+Nama: Reva Anwar
+NRP: 2C2230003
+
+Nomor 1
+ALGORITMA Membaca nilai uang (rupiah) dalam kelipatan 25
+ //Pecahan yang tersedia adalah Rp1000, Rp500, Rp100, Rp50, dan Rp25
+
+DEKLARASI
+    Uang , Sisa : Integer
+
+ALGORITMA:
+// Lakukan pengujian untuk memastikan nilai uang merupakan kelipatan 25, jika bukan, tampilkan pesan "Nilai uang harus dalam kelipatan 25" dan hentikan program
+// Inisialisasikan variabel sisa dengan nilai uang
+// Inisialisasikan variabel jumlah1rb, jumlah500rb, jumlah100rb, jumlah50rb, dan jumlah25rb dengan nilai 0
+
+// Selama sisa tidak sama dengan 0, lakukan langkah-langkah berikut:
+    pecahan1000 = uang / 1000;
+    sisa = uang % 1000;
+ // Bagi nilai uang dengan 500 dan simpan hasilnya sebagai pecahan500 lalu hitung sisa uang dengan modulo 500.
+   
+    pecahan500 = sisa / 500;
+    sisa = sisa % 500;
+// Bagi nilai uang dengan 100 dan simpan hasilnya sebagai pecahan100 lalu hitung sisa uang dengan modulo 100.
+
+    pecahan100 = sisa / 100;
+    sisa = sisa % 100;
+// Bagi nilai uang dengan 50 dan simpan hasilnya sebagai pecahan50 lalu hitung sisa uang dengan modulo 50.
+
+    pecahan50 = sisa / 50;
+    sisa = sisa % 50;
+// Bagi sisa uang dengan 25 dan simpan hasilnya sebagai pecahan25
+    pecahan25 = sisa / 25;
+
+// Tampilkan jumlah pecahan masing-masing pecahan: pecahan1000, pecahan500, pecahan100, pecahan50, pecahan25.
+Selesai
+
+
+Nomor 2
+Alasan keadaan algoritma ini gagal 
+repeat
+    berikan satu permen kepada anak pertama
+    berikan satu permen kepada anak kedua
+    berikan satu permen kepada anak ketiga
+until kantung permen kosong
+if ada sisa permen
+    berikan sisa permen kepada anak pertama
+
+Algoritma tersebut gagal dalam beberapa keadaan berikut:
+
+1. Jumlah permen tidak habis dibagi 3:
+Algoritma hanya akan memberikan permen kepada anak-anak selama kantung permen masih ada isinya.
+Jika jumlah permen tidak habis dibagi 3, maka akan ada sisa permen yang tidak terbagi.
+Algoritma tidak memiliki mekanisme untuk menangani sisa permen ini.
+Hal ini menyebabkan pembagian permen tidak adil, karena anak-anak tidak menerima jumlah permen yang sama.
+Contoh:
+Misalkan kantung permen berisi 5 permen.
+Anak pertama menerima 1 permen.
+Anak kedua menerima 1 permen.
+Anak ketiga menerima 1 permen.
+Anak pertama menerima 1 permen.
+Anak kedua menerima 1 permen.
+Hasil:
+Anak pertama memiliki 2 permen.
+Anak kedua memiliki 2 permen.
+Anak ketiga memiliki 1 permen.
+
+2. Salah satu anak tidak mau menerima permen:
+Algoritma mengasumsikan bahwa semua anak mau menerima permen.
+Jika salah satu anak tidak mau menerima permen, maka algoritma akan terus memberikan permen kepada anak tersebut, meskipun dia tidak menginginkannya.
+Hal ini menyebabkan pembagian permen tidak adil, karena anak-anak yang mau menerima permen akan mendapatkan lebih banyak permen.
+Contoh:
+Misalkan ada 3 anak, dan anak kedua tidak mau menerima permen.
+Anak pertama menerima 1 permen.
+Anak kedua menolak 1 permen.
+Anak ketiga menerima 1 permen.
+Anak pertama menerima 1 permen.
+Anak kedua menolak 1 permen.
+Anak ketiga menerima 1 permen.
+Hasil:
+Anak pertama memiliki 3 permen.
+Anak kedua memiliki 0 permen.
+Anak ketiga memiliki 2 permen.
+
+3. Algoritma tidak diimplementasikan dengan benar:
+Algoritma ini sederhana, tetapi jika tidak diimplementasikan dengan benar, maka dapat menyebabkan kegagalan.
+Kesalahan implementasi dapat menyebabkan permen tidak dibagikan secara adil kepada anak-anak.
+Contoh:
+Misalkan algoritma diimplementasikan dengan kesalahan, sehingga anak pertama menerima dua permen di setiap iterasi loop.
+Anak pertama menerima 2 permen.
+Anak kedua menerima 1 permen.
+Anak ketiga menerima 1 permen.
+Anak pertama menerima 2 permen.
+Anak kedua menerima 1 permen.
+Anak ketiga menerima 1 permen.
+Hasil:
+Anak pertama memiliki 4 permen.
+Anak kedua memiliki 2 permen.
+Anak ketiga memiliki 2 permen.
+
+Kesimpulan:
+Algoritma yang tersebut untuk membagi permen secara adil kepada 3 orang anak dapat gagal dalam beberapa keadaan. Untuk memastikan pembagian permen yang adil, perlu mempertimbangkan dan menangani semua kemungkinan kegagalan ini.
+
+
