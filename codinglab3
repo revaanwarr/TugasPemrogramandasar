@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Pegawai {
+private:
+  string nama;
+  string departemen;
+  int gaji;
+
+public:
+  Pegawai(string nama, string departemen, int gaji) {
+    this->nama = nama;
+    this->departemen = departemen;
+    this->gaji = gaji;
+  }
+
+  void cetakInfo() {
+    cout << "Nama: " << nama << endl;
+    cout << "Departemen: " << departemen << endl;
+    cout << "Gaji: Rp" << gaji << endl;
+  }
+
+  void naikGaji(int persen) {
+    gaji *= (100 + persen) / 100;
+  }
+};
+
+int main() {
+  Pegawai pegawai1("Budi", "IT", 5000000);
+
+  cout << "Informasi Pegawai Sebelum Kenaikan Gaji:" << endl;
+  pegawai1.cetakInfo();
+
+  pegawai1.naikGaji(10);
+
+  cout << endl << "Informasi Pegawai Setelah Kenaikan Gaji:" << endl;
+  pegawai1.cetakInfo();
+
+  return 0;
+}
